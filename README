@@ -1,0 +1,6 @@
+docker build -t docker-whale-fortune .
+docker tag #imageid# vinodsanthanam/docker-whale-fortune
+docker login
+docker push vinodsanthanam/docker-whale-fortune
+docker rmi -f #imageids#
+docker run vinodsanthanam/docker-whale-fortune
